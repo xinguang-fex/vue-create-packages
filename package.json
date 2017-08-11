@@ -1,7 +1,7 @@
 {
   "name": "vue-create-packages",
   "version": "1.0.0",
-  "description": "Vue[C框�生生态圈项目创创建脚手架工具态框架",
+  "description": "Vue技术生态圈项目创建脚手架工具",
   "author": "Catherine",
   "private": true,
   "scripts": {
