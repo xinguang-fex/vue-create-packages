@@ -1,0 +1,69 @@
+/**
+ * [基本样式重置和全局样式定义]
+ */
+$text-color: #222;
+$help-color: #999;
+$disable-color: #ccc;
+$font-size-base: 14px;
+$link-color: #2db7f5;
+$link-hover-color: #4DC4F0;
+$font-family:  "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, h6, i, b, textarea, button, input, select, figure, figcaption {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    font-family: $font-family;
+    -webkit-tap-highlight-color:transparent;
+    -webkit-font-smoothing: antialiased;
+    &:focus {
+        outline: none;
+    }
+}
+
+body{
+    color: $text-color;
+    font-family: $font-family;
+    font-size: 14px;
+    line-height: 1.5;   
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    /*background-color: #F5F5F5;*/
+}
+
+input[type="button"], input[type="submit"], input[type="search"], input[type="reset"] {
+    -webkit-appearance: none;
+}
+
+textarea { -webkit-appearance: none;}   
+ul,
+ol{
+    list-style: none;
+}
+
+a{
+    color: $link-color;
+    text-decoration: none;
+    transition: color .3s ease;
+    cursor: pointer;
+    &:hover{
+        color: $link-hover-color
+    }
+}
+
+h1 {
+    font-size: 16px
+}
+h2 {
+    font-size: 14px;
+}
+h3 {
+    font-size: $font-size-base
+}
+  
