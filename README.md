@@ -9,22 +9,22 @@
 npm install
 
 # serve with hot reload at localhost:8084
-npm run compile:dev
+npm run compile:dev (本地运行环境~)
 
 # build for production with minification(test website)
-npm run compile:test
+npm run compile:test (测试环境)
 
 # build for production with minification(online website)
-npm run compile:build
+npm run compile:build (线上环境)
 
 # run unit tests
-npm run unit
+npm run unit (单元测试)
 
 # run e2e tests
-npm run e2e
+npm run e2e (集成测试)
 
 # run all tests
-npm test
+npm test (所有测试)
 ```
 
 ## Backend Server API HOST CONFIG
