@@ -87,3 +87,22 @@ npm test (所有测试)
 └── README.md 说明文件
 
 ```
+
+## 系统初始化说明
+1.简单的登录界面地址：http://172.16.16.111:8084/#/
+
+![image](docs/login.png)
+
+2. 再登录页面直接点击"登录"按钮，进入到首页.
+![image](docs/business.png)
+
+3. 增加后台业务页面地址:
+在src/page下增加相应的页面业务逻辑代码,模板文件参考src/page/vueTpl.vue
+同时在src/page/Hello.vue 文件中增加相应的功能模块菜单
+![image](docs/menu.png)
+其中 配置的router参数用法: 是否使用 vue-router 的模式，启用该模式会在激活导航时以 index 作为 path 进行路由跳转
+
+
+## 技术栈简要说明(基于Vue-cli)
+1. 业务框架: vue,vuex,vue-router,element-ui
+2. 工程框架: webpack, babel, eslint, postcss, test相关.(后续实践补充~)
