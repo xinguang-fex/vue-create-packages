@@ -34,13 +34,14 @@ npm test (所有测试)
 ``` bash
 1. directory url： 'src/config/envconf.js'
 #其中区分出不同的环境后端服务接口地址和静态图片服务地址(如果有的话)
-
+#详细说明如下图.
 
 2. fetch api url Tool:
 #目前只简单写了一个简单的fetch方法,你也可以调用第三方库进行封装，比如axios.由项目人员自己决定
 
 ```
-
+config/envconf.js 配置文件说明
+![image](docs/config.png)
 
 ## 目录结构
 ```
@@ -74,6 +75,9 @@ npm test (所有测试)
 │   │── service #接口统一请求管理
 │   │── store #Vue 状态管理
 │   │── style #样式管理
+│   │   ├── theme 主题管理包文件夹
+│   │   ├── base.scss 基础样式文件
+│   │   ├── common.scss 公用样式文件
 │   │── extend #各个工具类
 │   │   ├── common #公用工具类
 │   │   │   ├──Utils.js #基本工具类
@@ -106,6 +110,18 @@ npm test (所有测试)
 同时在src/page/Hello.vue 文件中增加相应的功能模块菜单
 ![image](docs/menu.png)
 其中 配置的router参数用法: 是否使用 vue-router 的模式，启用该模式会在激活导航时以 index 作为 path 进行路由跳转
+
+
+## 系统主题色系定制
+Element 默认的主题色是鲜艳、友好的蓝色。通过替换主题色，能够让 Element 的视觉更加符合具体项目的定位. 主题放在style/theme文件夹下.
+
+如果不是使用默认的主题色，需要在src/main.js 中修改你所引用的主题色系样式主文件.
+如下图:
+![image](docs/theme.png)
+
+深层次样式定制：见Element-UI 官网.
+http://element.eleme.io/#/zh-CN/component/custom-theme
+
 
 
 ## 技术栈简要说明(基于Vue-cli)
