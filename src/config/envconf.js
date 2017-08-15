@@ -11,7 +11,12 @@ let baseUrl = '';
 let routerMode = 'history';
 let imgBaseUrl = '';
 
-
+/**
+ * [根据 process.env.NODE_ENV 区分服务器不同环境，本地调试NODE_ENV原则上仍然是'development',
+ * 如果是冒烟测试则手动将development block 内容修改为测试环境(testing)对应的地址即可]
+ * @param  {[type]}  [description]
+ * @return {[type]}                      [description]
+ */
 if (process.env.NODE_ENV == 'development') {
     baseUrl = "";
     imgBaseUrl = "";

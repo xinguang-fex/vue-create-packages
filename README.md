@@ -8,14 +8,17 @@
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8084
-npm run compile:dev (本地运行环境~)
+# build for local http:localhost:8094
+npm run compile:local (本地运行环境)
+
+# build for production with minification(develop website)
+npm run compile:dev (服务器开发环境~)
 
 # build for production with minification(test website)
-npm run compile:test (测试环境)
+npm run compile:test (服务器测试环境)
 
 # build for production with minification(online website)
-npm run compile:build (线上环境)
+npm run compile:build (服务器线上环境)
 
 # run unit tests
 npm run unit (单元测试)
@@ -32,10 +35,12 @@ npm test (所有测试)
 1. directory url： 'src/config/envconf.js'
 #其中区分出不同的环境后端服务接口地址和静态图片服务地址(如果有的话)
 
+
 2. fetch api url Tool:
 #目前只简单写了一个简单的fetch方法,你也可以调用第三方库进行封装，比如axios.由项目人员自己决定
 
 ```
+
 
 ## 目录结构
 ```
