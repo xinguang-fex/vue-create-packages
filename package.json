@@ -2,7 +2,7 @@
   "name": "vue-create-packages",
   "version": "1.0.0",
   "description": "Vue技术生态圈项目创建脚手架工具",
-  "author": "Catherine",
+  "author": "Catherine Z. (XINGUANG ZHAOSHUANGSHUANG)",
   "private": true,
   "scripts": {
     "compile:local": "node build/dev-server.js",
